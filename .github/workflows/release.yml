@@ -1,0 +1,87 @@
+name: Create Release
+
+on:
+  push:
+    tags:
+      - 'v*.*.*'
+
+jobs:
+  release:
+    name: Create Release
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # Fetch all history for changelog generation
+
+      # Only release from prod branch
+      - name: Exit if not on main branch
+        if: endsWith(github.event.base_ref, 'main') == false
+        run: exit -1
+
+      - name: Get version from tag
+        id: get_version
+        run: echo "VERSION=${GITHUB_REF#refs/tags/}" >> $GITHUB_OUTPUT
+
+      - name: Get previous tag
+        id: get_previous_tag
+        run: |
+          PREVIOUS_TAG=$(git tag --sort=-version:refname | grep -E '^v[0-9]+\.[0-9]+\.[0-9]+$' | sed -n '2p')
+          echo "PREVIOUS_TAG=${PREVIOUS_TAG}" >> $GITHUB_OUTPUT
+          echo "Previous tag: ${PREVIOUS_TAG}"
+
+      - name: Generate changelog
+        id: changelog
+        run: |
+          REPO_URL="https://github.com/${{ github.repository }}"
+          
+          if [ -n "${{ steps.get_previous_tag.outputs.PREVIOUS_TAG }}" ]; then
+            echo "Generating changelog from ${{ steps.get_previous_tag.outputs.PREVIOUS_TAG }} to ${{ steps.get_version.outputs.VERSION }}"
+            COMMIT_COUNT=$(git rev-list --count ${{ steps.get_previous_tag.outputs.PREVIOUS_TAG }}..${{ steps.get_version.outputs.VERSION }} --no-merges)
+            CHANGELOG=$(git log ${{ steps.get_previous_tag.outputs.PREVIOUS_TAG }}..${{ steps.get_version.outputs.VERSION }} --pretty=format:"- %s ([%h](${REPO_URL}/commit/%H))" --no-merges -n 100)
+          else
+            echo "No previous tag found, generating changelog for last 100 commits"
+            COMMIT_COUNT=$(git rev-list --count ${{ steps.get_version.outputs.VERSION }} --no-merges)
+            CHANGELOG=$(git log ${{ steps.get_version.outputs.VERSION }} --pretty=format:"- %s ([%h](${REPO_URL}/commit/%H))" --no-merges -n 100)
+          fi
+          
+          # Create formatted changelog file
+          echo "## Changes in ${{ steps.get_version.outputs.VERSION }}" > CHANGELOG.txt
+          echo "" >> CHANGELOG.txt
+          
+          if [ -n "${{ steps.get_previous_tag.outputs.PREVIOUS_TAG }}" ]; then
+            echo "**${COMMIT_COUNT} commits** since ${{ steps.get_previous_tag.outputs.PREVIOUS_TAG }}" >> CHANGELOG.txt
+          else
+            echo "**${COMMIT_COUNT} total commits**" >> CHANGELOG.txt
+          fi
+          
+          echo "" >> CHANGELOG.txt
+          
+          if [ ${COMMIT_COUNT} -gt 100 ]; then
+            echo "### Latest 100 commits (of ${COMMIT_COUNT} total):" >> CHANGELOG.txt
+            echo "" >> CHANGELOG.txt
+            echo "$CHANGELOG" >> CHANGELOG.txt
+            echo "" >> CHANGELOG.txt
+            echo "**Note:** This release contains ${COMMIT_COUNT} commits. Only the latest 100 are shown above. See the full commit history on GitHub." >> CHANGELOG.txt
+          else
+            echo "### All commits:" >> CHANGELOG.txt
+            echo "" >> CHANGELOG.txt
+            echo "$CHANGELOG" >> CHANGELOG.txt
+          fi
+          
+          echo "" >> CHANGELOG.txt
+          echo "---" >> CHANGELOG.txt
+
+      - name: Create Release
+        uses: softprops/action-gh-release@v1
+        with:
+          name: Release ${{ steps.get_version.outputs.VERSION }}
+          body_path: CHANGELOG.txt
+          draft: true
+          prerelease: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

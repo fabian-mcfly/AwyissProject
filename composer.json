@@ -1,0 +1,49 @@
+{
+	"name": "awyiss/project",
+	"description": "Awyiss starter project",
+	"type": "project",
+	"license": "MIT",
+	"require": {
+		"php": ">=8.4",
+		"awyiss/awyiss": "^0.3"
+	},
+	"require-dev": {
+		"awyiss/phpcs-sniffs": "^0.5.0",
+		"cakephp/cakephp-codesniffer": "^5.3.2",
+		"squizlabs/php_codesniffer": "^4.0"
+	},
+	"repositories": [
+		{
+			"type": "path",
+			"url": "../awyiss",
+			"canonical": false,
+			"options": {
+				"symlink": true
+			}
+		}
+	],
+	"scripts": {
+		"post-create-project-cmd": [
+			"@php -r \"is_file('bin/cake') && chmod('bin/cake', 0755);\"",
+			"@php -r \"is_dir('vendor/awyiss/awyiss/awyiss/assets/css') && chmod('vendor/awyiss/awyiss/awyiss/assets/css', 0755);\"",
+			"@php -r \"is_dir('vendor/awyiss/awyiss/awyiss/assets/js') && chmod('vendor/awyiss/awyiss/awyiss/assets/js', 0755);\"",
+			"bin/cake awyiss install"
+		],
+		"post-install-cmd": [],
+		"post-update-cmd": [],
+		"cs-check": "phpcs --colors -p",
+		"cs-fix": "phpcbf --colors -p"
+	},
+	"config": {
+		"sort-packages": true,
+		"allow-plugins": {
+			"cakephp/plugin-installer": true,
+			"dealerdirect/phpcodesniffer-composer-installer": true
+		}
+	},
+	"archive": {
+		"exclude": [
+			"/README.md"
+		]
+	}
+}
