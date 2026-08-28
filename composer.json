@@ -10,6 +10,7 @@
 	"require-dev": {
 		"awyiss/phpcs-sniffs": "^0.5.0",
 		"cakephp/cakephp-codesniffer": "^5.3.2",
+		"cakephp/debug_kit": "^5.2.4",
 		"squizlabs/php_codesniffer": "^4.0"
 	},
 	"scripts": {
