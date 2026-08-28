@@ -17,7 +17,8 @@
 			"@php -r \"is_file('bin/cake') && chmod('bin/cake', 0755);\"",
 			"@php -r \"is_dir('vendor/awyiss/awyiss/awyiss/assets/css') && chmod('vendor/awyiss/awyiss/awyiss/assets/css', 0755);\"",
 			"@php -r \"is_dir('vendor/awyiss/awyiss/awyiss/assets/js') && chmod('vendor/awyiss/awyiss/awyiss/assets/js', 0755);\"",
-			"bin/cake awyiss install"
+			"@php bin/cake.php awyiss install",
+			"@php bin/cake.php scss compile -r Backend"
 		],
 		"post-install-cmd": [],
 		"post-update-cmd": [],
