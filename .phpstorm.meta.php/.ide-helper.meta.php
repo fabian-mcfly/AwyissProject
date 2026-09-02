@@ -245,7 +245,6 @@ namespace PHPSTORM_META {
 	expectedArguments(
 		\Cake\Datasource\ConnectionManager::get(),
 		0,
-		'debug_kit',
 		'default',
 		'test',
 	);
@@ -269,8 +268,6 @@ namespace PHPSTORM_META {
 			'Customers' => \Awyiss\Model\Table\CustomersTable::class,
 			'DashboardElements' => \Awyiss\Model\Table\DashboardElementsTable::class,
 			'Datatables' => \Awyiss\Model\Table\DatatablesTable::class,
-			'DebugKit.Panels' => \DebugKit\Model\Table\PanelsTable::class,
-			'DebugKit.Requests' => \DebugKit\Model\Table\RequestsTable::class,
 			'Designs' => \Awyiss\Model\Table\DesignsTable::class,
 			'EmailTemplates' => \Awyiss\Model\Table\EmailTemplatesTable::class,
 			'FormConditionalRecipients' => \Awyiss\Model\Table\FormConditionalRecipientsTable::class,
@@ -424,8 +421,6 @@ namespace PHPSTORM_META {
 			'Customers' => \Awyiss\Model\Table\CustomersTable::class,
 			'DashboardElements' => \Awyiss\Model\Table\DashboardElementsTable::class,
 			'Datatables' => \Awyiss\Model\Table\DatatablesTable::class,
-			'DebugKit.Panels' => \DebugKit\Model\Table\PanelsTable::class,
-			'DebugKit.Requests' => \DebugKit\Model\Table\RequestsTable::class,
 			'Designs' => \Awyiss\Model\Table\DesignsTable::class,
 			'EmailTemplates' => \Awyiss\Model\Table\EmailTemplatesTable::class,
 			'FormConditionalRecipients' => \Awyiss\Model\Table\FormConditionalRecipientsTable::class,
@@ -491,8 +486,6 @@ namespace PHPSTORM_META {
 			'Customers' => \Awyiss\Model\Table\CustomersTable::class,
 			'DashboardElements' => \Awyiss\Model\Table\DashboardElementsTable::class,
 			'Datatables' => \Awyiss\Model\Table\DatatablesTable::class,
-			'DebugKit.Panels' => \DebugKit\Model\Table\PanelsTable::class,
-			'DebugKit.Requests' => \DebugKit\Model\Table\RequestsTable::class,
 			'Designs' => \Awyiss\Model\Table\DesignsTable::class,
 			'EmailTemplates' => \Awyiss\Model\Table\EmailTemplatesTable::class,
 			'FormConditionalRecipients' => \Awyiss\Model\Table\FormConditionalRecipientsTable::class,
@@ -548,7 +541,6 @@ namespace PHPSTORM_META {
 		'Categories',
 		'CounterCache',
 		'CustomerGroupAccessSetting',
-		'DebugKit.Timed',
 		'DefaultValues',
 		'EventTrigger',
 		'MediaAssignment',
@@ -583,8 +575,6 @@ namespace PHPSTORM_META {
 			'Customers' => \Cake\ORM\Association\BelongsToMany::class,
 			'DashboardElements' => \Cake\ORM\Association\BelongsToMany::class,
 			'Datatables' => \Cake\ORM\Association\BelongsToMany::class,
-			'DebugKit.Panels' => \Cake\ORM\Association\BelongsToMany::class,
-			'DebugKit.Requests' => \Cake\ORM\Association\BelongsToMany::class,
 			'Designs' => \Cake\ORM\Association\BelongsToMany::class,
 			'EmailTemplates' => \Cake\ORM\Association\BelongsToMany::class,
 			'FormConditionalRecipients' => \Cake\ORM\Association\BelongsToMany::class,
@@ -650,8 +640,6 @@ namespace PHPSTORM_META {
 			'Customers' => \Cake\ORM\Association\BelongsTo::class,
 			'DashboardElements' => \Cake\ORM\Association\BelongsTo::class,
 			'Datatables' => \Cake\ORM\Association\BelongsTo::class,
-			'DebugKit.Panels' => \Cake\ORM\Association\BelongsTo::class,
-			'DebugKit.Requests' => \Cake\ORM\Association\BelongsTo::class,
 			'Designs' => \Cake\ORM\Association\BelongsTo::class,
 			'EmailTemplates' => \Cake\ORM\Association\BelongsTo::class,
 			'FormConditionalRecipients' => \Cake\ORM\Association\BelongsTo::class,
@@ -745,7 +733,6 @@ namespace PHPSTORM_META {
 			'Search' => \Awyiss\Model\Behavior\SearchBehavior::class,
 			'SoftDelete' => \Awyiss\Model\Behavior\SoftDeleteBehavior::class,
 			'SystemOrder' => \Awyiss\Model\Behavior\SystemOrderBehavior::class,
-			'Timed' => \DebugKit\Model\Behavior\TimedBehavior::class,
 			'Timestamp' => \Cake\ORM\Behavior\TimestampBehavior::class,
 			'Translate' => \Awyiss\Model\Behavior\TranslateBehavior::class,
 			'Tree' => \Cake\ORM\Behavior\TreeBehavior::class,
@@ -771,7 +758,6 @@ namespace PHPSTORM_META {
 		'Search',
 		'SoftDelete',
 		'SystemOrder',
-		'Timed',
 		'Timestamp',
 		'Translate',
 		'Tree',
@@ -796,8 +782,6 @@ namespace PHPSTORM_META {
 			'Customers' => \Cake\ORM\Association\HasMany::class,
 			'DashboardElements' => \Cake\ORM\Association\HasMany::class,
 			'Datatables' => \Cake\ORM\Association\HasMany::class,
-			'DebugKit.Panels' => \Cake\ORM\Association\HasMany::class,
-			'DebugKit.Requests' => \Cake\ORM\Association\HasMany::class,
 			'Designs' => \Cake\ORM\Association\HasMany::class,
 			'EmailTemplates' => \Cake\ORM\Association\HasMany::class,
 			'FormConditionalRecipients' => \Cake\ORM\Association\HasMany::class,
@@ -863,8 +847,6 @@ namespace PHPSTORM_META {
 			'Customers' => \Cake\ORM\Association\HasOne::class,
 			'DashboardElements' => \Cake\ORM\Association\HasOne::class,
 			'Datatables' => \Cake\ORM\Association\HasOne::class,
-			'DebugKit.Panels' => \Cake\ORM\Association\HasOne::class,
-			'DebugKit.Requests' => \Cake\ORM\Association\HasOne::class,
 			'Designs' => \Cake\ORM\Association\HasOne::class,
 			'EmailTemplates' => \Cake\ORM\Association\HasOne::class,
 			'FormConditionalRecipients' => \Cake\ORM\Association\HasOne::class,
@@ -930,7 +912,6 @@ namespace PHPSTORM_META {
 		'Search',
 		'SoftDelete',
 		'SystemOrder',
-		'Timed',
 		'Timestamp',
 		'Translate',
 		'Tree',
@@ -1041,8 +1022,6 @@ namespace PHPSTORM_META {
 		'plugin.Bake.TodoTasks',
 		'plugin.Bake.UniqueFields',
 		'plugin.Bake.Users',
-		'plugin.DebugKit.Panels',
-		'plugin.DebugKit.Requests',
 		'plugin.IdeHelper.BarBars',
 		'plugin.IdeHelper.Cars',
 		'plugin.IdeHelper.Foos',
@@ -1364,9 +1343,6 @@ namespace PHPSTORM_META {
 			'Bake.DocBlock' => \Bake\View\Helper\DocBlockHelper::class,
 			'Breadcrumbs' => \Cake\View\Helper\BreadcrumbsHelper::class,
 			'Categories' => \Awyiss\View\Helper\CategoriesHelper::class,
-			'DebugKit.Credentials' => \DebugKit\View\Helper\CredentialsHelper::class,
-			'DebugKit.SimpleGraph' => \DebugKit\View\Helper\SimpleGraphHelper::class,
-			'DebugKit.Toolbar' => \DebugKit\View\Helper\ToolbarHelper::class,
 			'Flash' => \Awyiss\View\Helper\FlashHelper::class,
 			'Form' => \Awyiss\View\Helper\FormHelper::class,
 			'Html' => \Awyiss\View\Helper\HtmlHelper::class,
@@ -1391,22 +1367,6 @@ namespace PHPSTORM_META {
 		\Cake\View\View::element(),
 		0,
 		'Cake/TwigView.twig_panel',
-		'DebugKit.cache_panel',
-		'DebugKit.deprecations_panel',
-		'DebugKit.environment_panel',
-		'DebugKit.history_panel',
-		'DebugKit.include_panel',
-		'DebugKit.log_panel',
-		'DebugKit.mail_panel',
-		'DebugKit.packages_panel',
-		'DebugKit.plugins_panel',
-		'DebugKit.preview_header',
-		'DebugKit.request_panel',
-		'DebugKit.routes_panel',
-		'DebugKit.session_panel',
-		'DebugKit.sql_log_panel',
-		'DebugKit.timer_panel',
-		'DebugKit.variables_panel',
 		'Queue.Queue/connection_switcher',
 		'Queue.Queue/mobile_nav',
 		'Queue.Queue/sidebar',
@@ -1436,9 +1396,6 @@ namespace PHPSTORM_META {
 			'Bake.DocBlock' => \Bake\View\Helper\DocBlockHelper::class,
 			'Breadcrumbs' => \Cake\View\Helper\BreadcrumbsHelper::class,
 			'Categories' => \Awyiss\View\Helper\CategoriesHelper::class,
-			'DebugKit.Credentials' => \DebugKit\View\Helper\CredentialsHelper::class,
-			'DebugKit.SimpleGraph' => \DebugKit\View\Helper\SimpleGraphHelper::class,
-			'DebugKit.Toolbar' => \DebugKit\View\Helper\ToolbarHelper::class,
 			'Flash' => \Awyiss\View\Helper\FlashHelper::class,
 			'Form' => \Awyiss\View\Helper\FormHelper::class,
 			'Html' => \Awyiss\View\Helper\HtmlHelper::class,
@@ -1471,9 +1428,6 @@ namespace PHPSTORM_META {
 		'Bake.DocBlock',
 		'Breadcrumbs',
 		'Categories',
-		'DebugKit.Credentials',
-		'DebugKit.SimpleGraph',
-		'DebugKit.Toolbar',
 		'Flash',
 		'Form',
 		'Html',
@@ -1496,131 +1450,8 @@ namespace PHPSTORM_META {
 	expectedArguments(
 		\Cake\View\ViewBuilder::setLayout(),
 		0,
-		'DebugKit.dashboard',
-		'DebugKit.mailer',
-		'DebugKit.toolbar',
 		'Queue.queue',
 		'dev_error',
-	);
-
-	expectedArguments(
-		\DebugKit\Model\Entity\Panel::get(),
-		0,
-		argumentsSet('entityFields:DebugKit\Model\Entity\Panel'),
-	);
-
-	expectedArguments(
-		\DebugKit\Model\Entity\Panel::getError(),
-		0,
-		argumentsSet('entityFields:DebugKit\Model\Entity\Panel'),
-	);
-
-	expectedArguments(
-		\DebugKit\Model\Entity\Panel::getInvalidField(),
-		0,
-		argumentsSet('entityFields:DebugKit\Model\Entity\Panel'),
-	);
-
-	expectedArguments(
-		\DebugKit\Model\Entity\Panel::getOriginal(),
-		0,
-		argumentsSet('entityFields:DebugKit\Model\Entity\Panel'),
-	);
-
-	expectedArguments(
-		\DebugKit\Model\Entity\Panel::has(),
-		0,
-		argumentsSet('entityFields:DebugKit\Model\Entity\Panel'),
-	);
-
-	expectedArguments(
-		\DebugKit\Model\Entity\Panel::hasValue(),
-		0,
-		argumentsSet('entityFields:DebugKit\Model\Entity\Panel'),
-	);
-
-	expectedArguments(
-		\DebugKit\Model\Entity\Panel::isDirty(),
-		0,
-		argumentsSet('entityFields:DebugKit\Model\Entity\Panel'),
-	);
-
-	expectedArguments(
-		\DebugKit\Model\Entity\Panel::isEmpty(),
-		0,
-		argumentsSet('entityFields:DebugKit\Model\Entity\Panel'),
-	);
-
-	expectedArguments(
-		\DebugKit\Model\Entity\Panel::setDirty(),
-		0,
-		argumentsSet('entityFields:DebugKit\Model\Entity\Panel'),
-	);
-
-	expectedArguments(
-		\DebugKit\Model\Entity\Panel::setError(),
-		0,
-		argumentsSet('entityFields:DebugKit\Model\Entity\Panel'),
-	);
-
-	expectedArguments(
-		\DebugKit\Model\Entity\Request::get(),
-		0,
-		argumentsSet('entityFields:DebugKit\Model\Entity\Request'),
-	);
-
-	expectedArguments(
-		\DebugKit\Model\Entity\Request::getError(),
-		0,
-		argumentsSet('entityFields:DebugKit\Model\Entity\Request'),
-	);
-
-	expectedArguments(
-		\DebugKit\Model\Entity\Request::getInvalidField(),
-		0,
-		argumentsSet('entityFields:DebugKit\Model\Entity\Request'),
-	);
-
-	expectedArguments(
-		\DebugKit\Model\Entity\Request::getOriginal(),
-		0,
-		argumentsSet('entityFields:DebugKit\Model\Entity\Request'),
-	);
-
-	expectedArguments(
-		\DebugKit\Model\Entity\Request::has(),
-		0,
-		argumentsSet('entityFields:DebugKit\Model\Entity\Request'),
-	);
-
-	expectedArguments(
-		\DebugKit\Model\Entity\Request::hasValue(),
-		0,
-		argumentsSet('entityFields:DebugKit\Model\Entity\Request'),
-	);
-
-	expectedArguments(
-		\DebugKit\Model\Entity\Request::isDirty(),
-		0,
-		argumentsSet('entityFields:DebugKit\Model\Entity\Request'),
-	);
-
-	expectedArguments(
-		\DebugKit\Model\Entity\Request::isEmpty(),
-		0,
-		argumentsSet('entityFields:DebugKit\Model\Entity\Request'),
-	);
-
-	expectedArguments(
-		\DebugKit\Model\Entity\Request::setDirty(),
-		0,
-		argumentsSet('entityFields:DebugKit\Model\Entity\Request'),
-	);
-
-	expectedArguments(
-		\DebugKit\Model\Entity\Request::setError(),
-		0,
-		argumentsSet('entityFields:DebugKit\Model\Entity\Request'),
 	);
 
 	expectedArguments(
@@ -1693,126 +1524,6 @@ namespace PHPSTORM_META {
 		\Migrations\Db\Table::renameColumn(),
 		1,
 		argumentsSet('columnNames'),
-	);
-
-	expectedArguments(
-		\Queue\Model\Entity\QueueProcess::get(),
-		0,
-		argumentsSet('entityFields:Queue\Model\Entity\QueueProcess'),
-	);
-
-	expectedArguments(
-		\Queue\Model\Entity\QueueProcess::getError(),
-		0,
-		argumentsSet('entityFields:Queue\Model\Entity\QueueProcess'),
-	);
-
-	expectedArguments(
-		\Queue\Model\Entity\QueueProcess::getInvalidField(),
-		0,
-		argumentsSet('entityFields:Queue\Model\Entity\QueueProcess'),
-	);
-
-	expectedArguments(
-		\Queue\Model\Entity\QueueProcess::getOriginal(),
-		0,
-		argumentsSet('entityFields:Queue\Model\Entity\QueueProcess'),
-	);
-
-	expectedArguments(
-		\Queue\Model\Entity\QueueProcess::has(),
-		0,
-		argumentsSet('entityFields:Queue\Model\Entity\QueueProcess'),
-	);
-
-	expectedArguments(
-		\Queue\Model\Entity\QueueProcess::hasValue(),
-		0,
-		argumentsSet('entityFields:Queue\Model\Entity\QueueProcess'),
-	);
-
-	expectedArguments(
-		\Queue\Model\Entity\QueueProcess::isDirty(),
-		0,
-		argumentsSet('entityFields:Queue\Model\Entity\QueueProcess'),
-	);
-
-	expectedArguments(
-		\Queue\Model\Entity\QueueProcess::isEmpty(),
-		0,
-		argumentsSet('entityFields:Queue\Model\Entity\QueueProcess'),
-	);
-
-	expectedArguments(
-		\Queue\Model\Entity\QueueProcess::setDirty(),
-		0,
-		argumentsSet('entityFields:Queue\Model\Entity\QueueProcess'),
-	);
-
-	expectedArguments(
-		\Queue\Model\Entity\QueueProcess::setError(),
-		0,
-		argumentsSet('entityFields:Queue\Model\Entity\QueueProcess'),
-	);
-
-	expectedArguments(
-		\Queue\Model\Entity\QueuedJob::get(),
-		0,
-		argumentsSet('entityFields:Queue\Model\Entity\QueuedJob'),
-	);
-
-	expectedArguments(
-		\Queue\Model\Entity\QueuedJob::getError(),
-		0,
-		argumentsSet('entityFields:Queue\Model\Entity\QueuedJob'),
-	);
-
-	expectedArguments(
-		\Queue\Model\Entity\QueuedJob::getInvalidField(),
-		0,
-		argumentsSet('entityFields:Queue\Model\Entity\QueuedJob'),
-	);
-
-	expectedArguments(
-		\Queue\Model\Entity\QueuedJob::getOriginal(),
-		0,
-		argumentsSet('entityFields:Queue\Model\Entity\QueuedJob'),
-	);
-
-	expectedArguments(
-		\Queue\Model\Entity\QueuedJob::has(),
-		0,
-		argumentsSet('entityFields:Queue\Model\Entity\QueuedJob'),
-	);
-
-	expectedArguments(
-		\Queue\Model\Entity\QueuedJob::hasValue(),
-		0,
-		argumentsSet('entityFields:Queue\Model\Entity\QueuedJob'),
-	);
-
-	expectedArguments(
-		\Queue\Model\Entity\QueuedJob::isDirty(),
-		0,
-		argumentsSet('entityFields:Queue\Model\Entity\QueuedJob'),
-	);
-
-	expectedArguments(
-		\Queue\Model\Entity\QueuedJob::isEmpty(),
-		0,
-		argumentsSet('entityFields:Queue\Model\Entity\QueuedJob'),
-	);
-
-	expectedArguments(
-		\Queue\Model\Entity\QueuedJob::setDirty(),
-		0,
-		argumentsSet('entityFields:Queue\Model\Entity\QueuedJob'),
-	);
-
-	expectedArguments(
-		\Queue\Model\Entity\QueuedJob::setError(),
-		0,
-		argumentsSet('entityFields:Queue\Model\Entity\QueuedJob'),
 	);
 
 	expectedArguments(
@@ -5297,7 +5008,6 @@ namespace PHPSTORM_META {
 		'dashboard',
 		'dashboard_elements',
 		'datatables',
-		'debug_kit',
 		'designs',
 		'email_templates',
 		'form',
@@ -5324,7 +5034,6 @@ namespace PHPSTORM_META {
 		'menu_entries',
 		'menus',
 		'migrations',
-		'news',
 		'page_roles',
 		'page_templates',
 		'pages',
@@ -6159,7 +5868,6 @@ namespace PHPSTORM_META {
 		'menu_overview',
 		'menu_title',
 		'menu_title_templates',
-		'menu_trigger_open',
 		'menus_overview',
 		'message_account_verified',
 		'message_logout_success',
@@ -6668,23 +6376,17 @@ namespace PHPSTORM_META {
 		'access',
 		'accessType',
 		'active',
-		'adresse',
 		'allowCustomAnswer',
 		'alt',
-		'asdfasdf',
 		'attempts',
 		'averageColor',
-		'averageReadingTime',
 		'avif',
-		'backgroundColor',
 		'bcc',
 		'body',
 		'bodyConfirmation',
-		'carId',
 		'cc',
 		'changedBy',
 		'changedOn',
-		'checkboxAttribut',
 		'columnIndent',
 		'columnLast',
 		'columnRtl',
@@ -6697,7 +6399,6 @@ namespace PHPSTORM_META {
 		'contentAreaId',
 		'contentId',
 		'contentTemplateId',
-		'country',
 		'created',
 		'createdBy',
 		'createdOn',
@@ -6721,11 +6422,9 @@ namespace PHPSTORM_META {
 		'deletedOn',
 		'description',
 		'diff',
-		'dropdownSelect',
 		'duplicateOf',
 		'email',
 		'emailTemplateId',
-		'employerId',
 		'external',
 		'failedAttempts',
 		'failureMessage',
@@ -6737,10 +6436,8 @@ namespace PHPSTORM_META {
 		'finalAction',
 		'firstname',
 		'focusPoint',
-		'fooBarAttribute',
 		'foreignKey',
 		'formId',
-		'freeText',
 		'globalContentId',
 		'globalContentTemplateId',
 		'hasIndex',
@@ -6840,13 +6537,7 @@ namespace PHPSTORM_META {
 		'surveySurveyQuestionId',
 		'systemOrder',
 		'target',
-		'teaser',
 		'terminate',
-		'testattributUebersetzbar',
-		'testattribute',
-		'testattribute1',
-		'testattribute2',
-		'testattribute3',
 		'text',
 		'textHtml',
 		'textPlain',
@@ -6857,7 +6548,6 @@ namespace PHPSTORM_META {
 		'titleTag',
 		'transactionId',
 		'translatable',
-		'translatableText',
 		'transportProfile',
 		'type',
 		'uniqueId',
@@ -6873,7 +6563,6 @@ namespace PHPSTORM_META {
 		'verifiedOn',
 		'webp',
 		'width',
-		'wineId',
 		'workerkey',
 	);
 
@@ -6946,30 +6635,6 @@ namespace PHPSTORM_META {
 		'App.webroot',
 		'App.wwwRoot',
 		'AvailableCommands',
-		'AvailableCommands.ffmpeg',
-		'AvailableCommands.imageMagick',
-		'AvailableCommands.imageMagick.avif',
-		'AvailableCommands.imageMagick.doc',
-		'AvailableCommands.imageMagick.docx',
-		'AvailableCommands.imageMagick.pdf',
-		'AvailableCommands.imageMagick.ppt',
-		'AvailableCommands.imageMagick.pptx',
-		'AvailableCommands.imageMagick.psd',
-		'AvailableCommands.imageMagick.svg',
-		'AvailableCommands.imageMagick.webp',
-		'AvailableCommands.imageMagick.xls',
-		'AvailableCommands.imageMagick.xlsx',
-		'Csp',
-		'Csp.connectSrc',
-		'Csp.connectSrc.allow',
-		'Csp.fontSrc',
-		'Csp.fontSrc.allow',
-		'Csp.frameSrc',
-		'Csp.frameSrc.allow',
-		'Csp.scriptSrc',
-		'Csp.scriptSrc.allow',
-		'Csp.styleSrcElem',
-		'Csp.styleSrcElem.allow',
 		'Datasources',
 		'Datasources.default',
 		'Datasources.default.cacheMetadata',
@@ -6985,20 +6650,6 @@ namespace PHPSTORM_META {
 		'Datasources.default.quoteIdentifiers',
 		'Datasources.default.timezone',
 		'Datasources.default.username',
-		'Datasources.test',
-		'Datasources.test.cacheMetadata',
-		'Datasources.test.className',
-		'Datasources.test.database',
-		'Datasources.test.driver',
-		'Datasources.test.log',
-		'Datasources.test.persistent',
-		'Datasources.test.quoteIdentifiers',
-		'Datasources.test.timezone',
-		'DebugKit',
-		'DebugKit.forceEnable',
-		'DebugKit.ignoreAuthentication',
-		'DebugKit.panels',
-		'DebugKit.panels.DebugKit.Mail',
 		'Debugger',
 		'Debugger.editor',
 		'Design',
@@ -7123,13 +6774,6 @@ namespace PHPSTORM_META {
 		'Error.trace',
 		'IdeHelper',
 		'IdeHelper.generatorTasks',
-		'Instagram',
-		'Instagram.imapPassword',
-		'Instagram.imapServer',
-		'Instagram.imapUserName',
-		'Instagram.mediaFolderId',
-		'Instagram.password',
-		'Instagram.userName',
 		'MimeTypes',
 		'MimeTypes.application/csv',
 		'MimeTypes.application/download',
@@ -7202,7 +6846,7 @@ namespace PHPSTORM_META {
 		'Queue',
 		'Queue.defaultRequeueTimeout',
 		'Queue.maxworkers',
-		'Queue.workermaxruntime',
+		'Queue.workerLifetime',
 		'Route',
 		'Route.CustomerCenter',
 		'Route.CustomerCenter.actions',
@@ -7258,29 +6902,6 @@ namespace PHPSTORM_META {
 		'plugins.IdeHelper',
 		'plugins.Migrations',
 		'plugins.Queue',
-	);
-
-	registerArgumentsSet(
-		'entityFields:DebugKit\Model\Entity\Panel',
-		'content',
-		'element',
-		'id',
-		'panel',
-		'request',
-		'request_id',
-		'summary',
-		'title',
-	);
-
-	registerArgumentsSet(
-		'entityFields:DebugKit\Model\Entity\Request',
-		'content_type',
-		'id',
-		'method',
-		'panels',
-		'requested_at',
-		'status_code',
-		'url',
 	);
 
 	registerArgumentsSet(
@@ -8697,18 +8318,8 @@ namespace PHPSTORM_META {
 	registerArgumentsSet(
 		'tableNames',
 		'attributes',
-		'attributes_cars',
-		'attributes_contents',
-		'attributes_employers',
-		'attributes_global_contents',
-		'attributes_media_folders',
-		'attributes_news',
-		'attributes_newscategories',
-		'attributes_pages',
-		'attributes_wines',
 		'audit',
 		'backend_menu_entries',
-		'cars',
 		'configuration',
 		'content_areas',
 		'content_template_content_areas',
@@ -8724,8 +8335,6 @@ namespace PHPSTORM_META {
 		'datatables',
 		'designs',
 		'email_templates',
-		'employees',
-		'employers',
 		'form_conditional_recipients',
 		'form_elements',
 		'form_entries',
@@ -8766,7 +8375,6 @@ namespace PHPSTORM_META {
 		'usergroups',
 		'usergroups_users',
 		'users',
-		'wines',
 	);
 
 	registerArgumentsSet(
