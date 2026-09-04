@@ -12,7 +12,7 @@ ij_formatter_on_tag = @formatter:on
 ij_formatter_tags_enabled = true
 ij_smart_tabs = false
 ij_visual_guides = 140
-ij_wrap_on_typing = true
+ij_wrap_on_typing = false
 
 [*.css]
 ij_continuation_indent_size = 4
@@ -38,7 +38,6 @@ ij_css_value_alignment = do_not_align
 
 [*.csv]
 ij_visual_guides = 
-ij_wrap_on_typing = false
 ij_csv_enable_wide_character_detection = false
 ij_csv_keep_indents_on_empty_lines = true
 ij_csv_leading_white_spaces = false
@@ -101,7 +100,6 @@ ij_scss_value_alignment = 0
 max_line_length = 200
 ij_continuation_indent_size = 4
 ij_visual_guides = 200
-ij_wrap_on_typing = false
 ij_twig_keep_indents_on_empty_lines = false
 ij_twig_spaces_inside_comments_delimiters = true
 ij_twig_spaces_inside_delimiters = true
@@ -330,7 +328,6 @@ ij_shell_use_unix_line_separator = true
 [{*.cjs,*.es6,*.js,*.mjs}]
 ij_continuation_indent_size = 4
 ij_visual_guides = 
-ij_wrap_on_typing = false
 ij_javascript_align_imports = false
 ij_javascript_align_multiline_array_initializer_expression = false
 ij_javascript_align_multiline_binary_operation = false
@@ -506,7 +503,6 @@ ij_javascript_wrap_comments = false
 [{*.ctp,*.hphp,*.inc,*.module,*.php,*.php4,*.php5,*.phtml}]
 ij_continuation_indent_size = 4
 ij_visual_guides = 
-ij_wrap_on_typing = false
 ij_php_align_assignments = false
 ij_php_align_class_constants = false
 ij_php_align_enum_cases = false
@@ -750,7 +746,6 @@ ij_php_while_on_new_line = true
 max_line_length = 100
 ij_continuation_indent_size = 4
 ij_visual_guides = 100
-ij_wrap_on_typing = false
 ij_json_array_wrapping = on_every_item
 ij_json_keep_blank_lines_in_code = 0
 ij_json_keep_indents_on_empty_lines = false
