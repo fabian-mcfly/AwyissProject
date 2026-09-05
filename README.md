@@ -5,7 +5,7 @@ Starter project for [Awyiss CMS](https://github.com/fabian-mcfly/Awyiss), built 
 ![Awyiss CMS](logo-awyiss.png)
 
 ![Awyiss Version](https://img.shields.io/badge/Awyiss%20Version-0.3.0%20%22Interface%22-63D1A5?style=for-the-badge&labelColor=131A21)\
-![Project Version](https://img.shields.io/badge/Project%20Version-1.0.1-63D1A5?style=for-the-badge&labelColor=131A21)\
+![Project Version](https://img.shields.io/badge/Project%20Version-1.0.5-63D1A5?style=for-the-badge&labelColor=131A21)\
 ![PHP](https://img.shields.io/badge/PHP-8.4+-63D1A5?style=for-the-badge&labelColor=131A21)\
 ![License](https://img.shields.io/badge/License-MIT-63D1A5?style=for-the-badge&labelColor=131A21)
 
